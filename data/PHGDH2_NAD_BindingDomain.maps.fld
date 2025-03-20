@@ -1,0 +1,56 @@
+# AVS field file
+#
+# AutoDock Atomic Affinity and Electrostatic Grids
+#
+# Created by autogrid4.
+#
+#SPACING 0.375
+#NELEMENTS 126 126 122
+#CENTER -15.373 -3.823 16.675
+#MACROMOLECULE PHGDH2_NAD_BindingDomain.pdbqt
+#GRID_PARAMETER_FILE phgdh.gpf
+#
+ndim=3			# number of dimensions in the field
+dim1=127			# number of x-elements
+dim2=127			# number of y-elements
+dim3=123			# number of z-elements
+nspace=3		# number of physical coordinates per point
+veclen=15		# number of affinity values at each point
+data=float		# data type (byte, integer, float, double)
+field=uniform		# field type (uniform, rectilinear, irregular)
+coord 1 file=PHGDH2_NAD_BindingDomain.maps.xyz filetype=ascii offset=0
+coord 2 file=PHGDH2_NAD_BindingDomain.maps.xyz filetype=ascii offset=2
+coord 3 file=PHGDH2_NAD_BindingDomain.maps.xyz filetype=ascii offset=4
+label=A-affinity	# component label for variable 1
+label=C-affinity	# component label for variable 2
+label=HD-affinity	# component label for variable 3
+label=N-affinity	# component label for variable 4
+label=NA-affinity	# component label for variable 5
+label=OA-affinity	# component label for variable 6
+label=SA-affinity	# component label for variable 7
+label=Br-affinity	# component label for variable 8
+label=Cl-affinity	# component label for variable 9
+label=F-affinity	# component label for variable 10
+label=I-affinity	# component label for variable 11
+label=P-affinity	# component label for variable 12
+label=S-affinity	# component label for variable 13
+label=Electrostatics	# component label for variable 13
+label=Desolvation	# component label for variable 14
+#
+# location of affinity grid files and how to read them
+#
+variable 1 file=PHGDH2_NAD_BindingDomain.A.map filetype=ascii skip=6
+variable 2 file=PHGDH2_NAD_BindingDomain.C.map filetype=ascii skip=6
+variable 3 file=PHGDH2_NAD_BindingDomain.HD.map filetype=ascii skip=6
+variable 4 file=PHGDH2_NAD_BindingDomain.N.map filetype=ascii skip=6
+variable 5 file=PHGDH2_NAD_BindingDomain.NA.map filetype=ascii skip=6
+variable 6 file=PHGDH2_NAD_BindingDomain.OA.map filetype=ascii skip=6
+variable 7 file=PHGDH2_NAD_BindingDomain.SA.map filetype=ascii skip=6
+variable 8 file=PHGDH2_NAD_BindingDomain.Br.map filetype=ascii skip=6
+variable 9 file=PHGDH2_NAD_BindingDomain.Cl.map filetype=ascii skip=6
+variable 10 file=PHGDH2_NAD_BindingDomain.F.map filetype=ascii skip=6
+variable 11 file=PHGDH2_NAD_BindingDomain.I.map filetype=ascii skip=6
+variable 12 file=PHGDH2_NAD_BindingDomain.P.map filetype=ascii skip=6
+variable 13 file=PHGDH2_NAD_BindingDomain.S.map filetype=ascii skip=6
+variable 14 file=PHGDH2_NAD_BindingDomain.e.map filetype=ascii skip=6
+variable 15 file=PHGDH2_NAD_BindingDomain.d.map filetype=ascii skip=6
