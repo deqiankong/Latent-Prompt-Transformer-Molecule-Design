@@ -63,6 +63,12 @@ Example using ba0:
 python train.py --train_phase=onlinelearn --num_epochs=25 --lr=5e-4 --min_lr=7.5e-5 --mol_property=ba0 --protein_file=data/1err.maps.fld --train_from=$FINETUNE_CHECKPOINT --gpu=0
 ```
 
+## Questions
+
+Please open an issue or email e.honig@ucla.edu with any questions or comments regarding this code.
+
+Thank you for your interest in our work!
+
 ## Cite
 
 ```
