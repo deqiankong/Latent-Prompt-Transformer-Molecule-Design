@@ -4,7 +4,7 @@ This repository contains code for NeurIPS 2024 spotlight paper [Molecule Design 
 
 ```bash
 # Install uv if necessary
-which uv >/dev/null 2>&1 || curl -sSf https://install.astral.sh/uv | sh
+which uv >/dev/null 2>&1 || curl -LsSf https://astral.sh/uv/install.sh | sh
 # Setup Python environment
 uv venv --python=3.10
 source .venv/bin/activate
